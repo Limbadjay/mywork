@@ -1,0 +1,31 @@
+ul.links
+{
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+ul.links>li{
+    display: inline;
+    
+}
+ul.links>li>a:link , ul.links>li>a:visited
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+ul.link>li>a:hover
+{
+    color: red;
+    background-color: white;
+}
+ul.links>li>a:active
+{
+    color: black;
+    background-color: yellow;
+}
+a:link{
+    color:brown;
+}
