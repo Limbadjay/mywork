@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #97262fb6;
+        }
+        a{
+            color: white;
+        }
+        /* navigation */
+
+        .navigation{
+            background-color: #b3cf36b6;
+            box-shadow: 3px 5px 5px whitesmoke;
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+        }
+
+        .navigation>ul
+        {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            overflow: hidden;
+            background-color: rgba(212, 212, 76, 0.788);
+        }
+        .navigation li a{
+            display: block;
+            padding: 20px 20px;
+            border-right: 1px solid rgb(226, 14, 14);
+            text-decoration: none;
+        }
+        .navigation>li>a:hover,.navigation .menu-btn:hover{
+            background-color: black;
+        }
+        .navigation .menu{
+            clear: both;
+            max-height: 0px;
+            transition: max-heigh .2s ease-out;
+        }
+        .navigation .menu-icon
+        {
+            cursor: pointer;
+            display: inline-block;
+            float: right;
+            padding: 28px 20px;
+            position: relative;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="navigation">
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"</span></label>
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#careers">CAREERS</a></li>
+                <li><a href="#contact">CONTECT</a></li>
+            </ul>
+    </header>
+</body>
+</html>

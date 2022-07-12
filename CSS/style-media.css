@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 *
 {
     margin: 0px;
@@ -81,3 +82,36 @@
         flex-direction:column;
     }
   }
+html,body
+{
+    height: 100%;
+    background-color: #E7717D;
+}
+.header
+{
+    background-color: #5CDB95;
+    text-transform: uppercase;
+    position: sticky;
+    top:0px;
+}
+.header>h3
+{
+    font-size: 33px;
+    text-align: center;
+    color: white;
+    padding:5px;
+    letter-spacing: 1px;
+    border-bottom: none;   
+}
+h5{
+    font-size: 24px;
+    color:white;
+    padding: 2px;
+    letter-spacing: 1px;  
+}
+p
+{
+    font-size: 20px;
+    color: white;
+    
+}
