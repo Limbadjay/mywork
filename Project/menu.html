@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      hr {
+        color: white;
+      }
+    </style>
+</head>
+<body>
+     <!-- responsive menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container-fluid">
+      <img src="F:\mywork\Project\img\logo.JPG" class="img-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white js-scroll-to" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white js-scroll-to" href="#">GALlERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white js-scroll-to" href="#">FOOD & DRINK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white js-scroll-to" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+&nbsp;
+  <!-- responsive menu -->
+
+  <!-- image home -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <img src="F:/mywork/Project/img/photo1.webp" class="img-fluid">
+    </div>
+  </div>
+  <!-- image home -->
+
+  <!-- ABOUT US-->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 class="text-center">ABOUT US</h2>
+          <hr width="100%">
+        </div>
+        <div class="col-12 col-lg-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error quos alias id quasi ipsa beatae cupiditate ipsum vel ratione.</p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <img src="https://picsum.photos/600/300" class="img-fluid">
+        </div>
+      </div>
+  <!-- ABOUT US-->
+
+  <!-- GALLERY SLIDER-->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h2 class="text-center">GALLERA</h2>
+      <hr width="100%">
+    </div>
+  </div>
+  <div id="myslider" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/300" class="d-block w-100" alt="https://picsum.photos/1200/300" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1201/300" class="d-block w-100" alt="https://picsum.photos/1201/300" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1202/300" class="d-block w-100" alt="https://picsum.photos/1202/300" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1203/300" class="d-block w-100" alt="https://picsum.photos/1203/300" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1204/300" class="d-block w-100" alt="https://picsum.photos/1204/300" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myslider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myslider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- GALLERY SLIDER-->     
+      
+  <!--FOOD & DRINK-->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h2 class="text-center">FOOD & DRINK</h2>
+      <hr width="100%">
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <img src="https://picsum.photos/300" class="img-fluid">
+          <h6>img-6</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="https://picsum.photos/301" class="img-fluid">
+          <h6>img-6</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="https://picsum.photos/302" class="img-fluid">
+          <h6>img-6</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="https://picsum.photos/303" class="img-fluid">
+          <h6>img-6</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="https://picsum.photos/304" class="img-fluid">
+          <h6>img-6</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="https://picsum.photos/305" class="img-fluid">
+          <h6>img-6</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOOD & DRINK-->
+
+  <!--CONTACT US-->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h2 class="text-center">CONTACT US</h2>
+      <hr width="100%">
+    </div>
+    <div class="col-12">
+      <div class="col-12 col-sm-12 col-md-9 col-lg-12">
+        <div id="map" style="width:100%;height:200px"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-3">
+        <h5 class="text-center">Follow us</h5>
+      </div>
+      <div class="col-4">
+        <p class="display-5 text-center"><i class="fa-brands fa-square-twitter"></i></p>
+      </div>
+      <div class="col-4">
+        <p class="display-5 text-center"><i class="fa-brands fa-square-facebook"></i></p>
+      </div>
+      <div class="col-4">
+        <p class="display-5 text-center"><i class="fa-brands fa-instagram"></i></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--CONTACT US-->
+
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+    <!-- for jquery (smooth scrolling effect) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- for openstreetmap -->
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+  <script>
+    $(function () {
+      $(".js-scroll-to").click(function (e) {
+        var destination = $(this).attr("href");
+        e.preventDefault();
+        $("html, body").animate(
+          {
+            scrollTop: $(destination).offset().top - 50,
+          },
+          500
+        );
+      });
+    });
+    // 21.75402, 72.14374 used to display map
+    var mapOptions = {
+      center: [21.75402, 72.14374],
+      zoom: 15
+    }
+    // Creating a map object
+    var map = new L.map('map', mapOptions);
+    // Creating a Layer object
+    var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    // Adding layer to the map
+    map.addLayer(layer);
+    let iconOptions = {
+      title: "the easylearn academy",
+      draggable: false,
+    }
+    let marker = new L.Marker([21.75402, 72.14374], iconOptions);
+    marker.addTo(map);
+  </script>
+</body>
+</html>
