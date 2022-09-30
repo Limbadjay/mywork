@@ -72,7 +72,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //                     <div class="card m-2" className='col-lg-3'>
 //                         <img src="https://picsum.photos/107" class="card-img-top" alt="card-group-image"/>
 //                     </div>
-                    
+
 //                 </div>
 //             </div>
 //         </div>
@@ -178,30 +178,136 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //     );
 // }
 /* CLASS COMPONENT*/
-class Page extends React.Component
+// class Page extends React.Component
+// {
+//     constructor(props)
+//     {
+//         super(props);
+//         this.state = {
+//             name :'the EasyLearn Academy',
+//             contact : '9157660440',
+//             year : '2000'
+//         }
+//     }
+//     render(){
+//         return(
+//             <div className='container'>
+//                 <div className='row'>
+//                     <div className='col-12'>
+//                         <div className='card'>
+//                             <div className='card-header'>
+//                                 <h3>Class Name {this.state.name}</h3>
+//                             </div>
+//                             <div className='card-body'>
+//                                 <b>contact no :- {this.state.contact}</b><br/>
+//                                 <b>Year :- {this.state.year}</b>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         );
+//     }
+// }
+// class page extends React.Component
+// {
+//     constructor()
+//     {
+//         super(props);
+//         this.state = {
+//             name = 'jay limbad',
+
+//         }
+
+//     }
+// }
+// let number1 = 10;
+// let number2 = 2;
+// let output = <div className='container'>
+//     <div className='row'>
+//         <div className='col-12'>
+//         <h1>Student List</h1><hr/>
+//             <table className='table table-borderd table-striped'>
+//             <thead>
+//                 <tr className=''>
+//                     <td>Rollno</td>
+//                     <td>Name</td>
+//                     <td>PhoneNo</td>
+//                     <td>Email</td>
+//                     <td>Pincode</td>
+//                 </tr>
+//             </thead>
+//             <tbody>
+//                 <tr>
+//                     <td>01</td>
+//                     <td>parmar darshan</td>
+//                     <td>9904081605</td>
+//                     <td>darshansinhparmar@gmail.com</td>
+//                     <td>364004</td>
+//                 </tr>
+//                 <tr>
+//                     <td>02</td>
+//                     <td>kaliya kuldip</td>
+//                     <td>9865412356</td>
+//                     <td>kuldipkaliya@gamil.com</td>
+//                     <td>364001</td>
+//                 </tr>
+//                 <tr>
+//                     <td>03</td>
+//                     <td>poojaba solanlki</td>
+//                     <td>9854125786</td>
+//                     <td>poojabasolinki@gmail.com</td>
+//                     <td>340102</td>
+//                 </tr>
+//             </tbody>
+//             </table>
+//         </div>
+//     </div>
+// </div>
+// 
+// const Page = (
+//     <div className='container'>
+//         <div className='row'>
+//             <div className='col-6 offset-3 mt-5'>
+//                 <div className='card'>
+//                     <div className='craad-header text-bg-primary'>
+//                         <h4 align='center'>Login user</h4>
+//                     </div>
+//                     <div className='card-body'>
+//                         <div>
+//                             <input type='Email' className='form-control' placeholder='Enter Email-id'/>&nbsp;
+//                             <input type='Password' className='form-control' placeholder='Enter Password'/>&nbsp; 
+//                         </div>
+//                         <div align='right'>
+//                             <button className='btn btn-primary' value='submit'>Click Me</button>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// )
+
+function DisplayDetail(student)
 {
-    constructor(props)
-    {
-        super(props);
-        this.state = {
-            name :'the EasyLearn Academy',
-            contact : '9157660440',
-            year : '2000'
-        }
-    }
-    render(){
-        return(
-            <div className='container'>
-                <div className='row'>
-                    <div className='col-12'>
-                        <div className='card'>
-                            <div className='card-header'>
-                                <h3>Class Name {this.state.name}</h3>
-                            </div>
-                        </div>
-                    </div>
+    return(
+        <div className='container'>
+            <div className='row'>
+                <div className='col-12'>
+                    <h2>Student Detail</h2>
+                    <ul className='list-group'>
+                        <li className='list-group-item'>Name:{Student.name}</li>
+                        <li className='list-group-item'>age:{Student.age}</li>
+                        <li className='list-grop-item'>weight:{Student.weight}</li>
+                    </ul>
                 </div>
             </div>
-        )
-    }
-root.render(<Page/>);
+        </div>
+    )
+}
+let Student={
+    name :"jay k limbad",
+    age : 21,
+    weight : 50.20
+}
+root.render(DisplayDetail);
