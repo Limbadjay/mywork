@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import ListExample2 from './ListExample1';
 // import Subject from './Subject';
 // import Movie from './Movie';
 //import Movie1 from './Movie1';
 // import Marks from './Marks';
-import MyLifecycle from './MyLifeCycle ';
+// import EventHandlingTechnique2 from './EventHandlingTechnique2 ';
+// import MyLifecycle from './MyLifeCycle';
+import ListExample1 from './ListExample1';
+// import ConditionalRendering from './ConditionalRendering ';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // class Plyer extends React.Component {
@@ -178,5 +182,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //         </div>
 //     );
 // }
-
-root.render(<MyLifecycle/>); 
+// function FacebookPage()
+// {
+//     return(
+//         <div><EventHandlingTechnique2/></div>
+//     );
+// }
+// function ConditionRenderingDemo()
+// {
+//     return(
+//         <div className='cantainer mt-3'>
+//             <div className='row'>
+//                 <ConditionalRendering  />
+//             </div>
+//         </div>
+//     )
+// }
+// var states = ['Gujrat','Maharastra','karantaka','andhra-pradesh','tamil-nadu'];
+ var states = [{name:'jay',id:1},{name:'kelvin', id:2},{name:'kuldip',id:3},{name:'darshan',id:4},{name:'chirag',id:'5'}];
+root.render(<ListExample2 states={states}/>); 
