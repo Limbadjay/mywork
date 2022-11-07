@@ -1,10 +1,13 @@
-function Contact()
-{
+import{ useParams } from "react-router-dom"
+function Contact(){
+    const {mobile,email} = useParams()
+
     return(
         <div>
-            <h3>
-                Contact US
-            </h3>
+            <h1>Contact US</h1>
+            <hr/>
+            <b>Mobile:</b><br/>
+            <b>email:</b>           
         </div>
     )
 }

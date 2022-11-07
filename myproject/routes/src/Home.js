@@ -1,9 +1,10 @@
+import Sharedata from "./sharmarket";
 function Home()
 {
     return(
         <div>
-            <h3>Wellcome Home</h3>
+            <Sharedata/>
         </div>
-    )
+    );
 }
 export default Home
