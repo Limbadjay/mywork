@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap');
+*
+{
+    margin: 0px;
+    padding:0px;
+    font-family: montserrat;
+}
+.header{
+    grid-area: header;
+}
+.mymenu {
+    grid-area: menu;
+}
+.content{
+    grid-area: content;
+}
+.news 
+{
+    grid-area: news;
+}
+.advertise
+{
+    grid-area: advertise;
+    display: flex;
+}
+.advertise>div 
+{
+    width: 50%;
+}
+.footer{
+    grid-area: footer;
+}
+
+.container>div 
+{
+    border:1px solid black;
+}
+
+  /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+  @media (min-width: 1025px){
+    /* code in this block will be applied only if device width>1025 and <1280 */
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1.2fr 4fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+                "header header header"
+                "menu content news"
+                "advertise advertise advertise"
+                "footer footer footer";
+    }
+    .content>p, .news>.news-box{
+        font-size: 14px;
+    }
+  }
+  
+  /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* code in this block will be applied only if device width>768 and <1024 */
+    .container{
+        display: grid;
+        grid-template-columns: 4fr 1.5fr;
+        /* grid-template-rows: 1fr 1fr 4fr 1fr 1fr; */
+        grid-template-rows: 100px auto auto auto auto;
+        grid-template-areas: 
+                "header header"
+                "menu menu"
+                "content news"
+                "advertise advertise"
+                "footer footer";
+    }
+  }
+  
+  /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */ 
+  @media (min-width: 320px) and (max-width: 767px) 
+  {
+    /* code in this block will be applied only if device width>320 and <480 */
+    .container
+    {
+        display: flex;
+        flex-direction:column;
+    }
+    .advertise
+    {
+        display: flex;
+        flex-direction:column;
+    }
+  }
+
+@media (max-width: 1024px){
+    .mymenu 
+    {
+        visibility: hidden;
+        height: 0px;
+    }
+}
+html,body 
+{
+    height: 100%;
+}
+.header 
+{
+    background-color: #dc7027;
+    position: sticky;
+    top:0px;
+    left: 0px;
+    display: flex;
+}
+.header>h3
+{
+    color: white;
+    text-transform: uppercase;
+    padding:5px;
+    letter-spacing: 1px;
+    border-bottom: none;
+    font-size: 1.2rem;
+    width: 80%;
+}
+body 
+{
+    background-color:#f4d8ae;
+    color:#dc7027;
+}
+.content 
+{
+    padding:5px;
+}
+.content>p 
+{
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 125%;
+    margin-bottom: 10px;
+}
+h1,h2,h3,h4,h5,h6 
+{
+    font-family: Oswald;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dc7027;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.news 
+{
+    background-color: #DD4F54;
+}
+.news>.news-box 
+{
+    background-color: #C74146;
+    margin: 10px;
+    border:1px solid white;
+    padding:5px;
+    border-radius: 5px 5px 5px;
+    color:white;
+    box-shadow: 2px 2px 5px black;
+}
+.advertise
+{
+    background-color: white;
+    padding:5px;
+    text-align: center;
+}
+.advertise * 
+{
+    margin: auto;
+}
+.footer 
+{
+    background-color: #dc7027;
+    position: sticky;
+    bottom: 0px;
+    left: 0px;
+    padding:5px;
+}
+.footer>p 
+{
+    text-align: center;
+    color:white;
+}
+.mymenu 
+{
+    background-color: #C74146;
+    padding-left: 15%;
+}
+.mymenu>ul 
+{
+    list-style-image: url('hand.png');
+}
+.mymenu>ul>li 
+{
+    padding-top:3px;
+    padding-bottom:3px;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+.mymenu>ul>li>a:link 
+{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.mymenu>ul>li>a:hover
+{
+    text-decoration: underline;
+} 
+.mymenu>h3 
+{
+    color:white;
+    border-bottom:1px solid white;
+}
+
+.navigation {
+    background-color: #dc7027;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    z-index: 3;
+  }
+  
+  .navigation>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  .navigation li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color:white;    
+  }
+  
+  .navigation>li>a:hover,
+  .navigation .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .navigation .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .navigation .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    position: absolute;
+    top:45px;
+    left:0px;
+    background-color: #dc7027;
+    width:100%;
+  }
+  
+  /* menu icon */
+  
+  .navigation .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    top:-50px;
+  }
+  
+  .navigation .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .navigation .menu-icon .navicon:before,
+  .navigation .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .navigation .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .navigation .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .navigation .menu-btn {
+    display: none;
+  }
+  
+  .navigation .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .navigation .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .navigation .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .navigation .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }  
+  @media (min-width: 1024px) {
+    header 
+    {
+        visibility: hidden;
+        height: 0px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .header
+    {
+        flex-direction: column;
+    }
+  }
+.navigation
+{
+  height:0px;
+}
+  

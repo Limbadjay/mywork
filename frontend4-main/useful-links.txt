@@ -1,0 +1,30 @@
+for html entites (symbol)
+https://dev.w3.org/html5/html-author/charref
+
+for html, css, javascript 
+developer.mozilla.org
+https://css-tricks.com
+
+for fonts 
+https://fonts.google.com/
+
+for image icons 
+https://www.iconfinder.com 
+
+offical website for bootstrap 
+https://getbootstrap.com/
+
+for css icons 
+https://fontawesome.com/icons
+
+bootstrap cheetsheet
+https://bootstrap-cheatsheet.themeselection.com/
+
+
+
+for map (basic)
+https://medium.com/@nargessmi87/how-to-embede-open-street-map-in-a-webpage-like-google-maps-8968fdad7fe4
+
+advance 
+https://medium.com/@nargessmi87/how-to-customize-the-openstreetmap-marker-icon-and-binding-popup-ab2254bddec2
+
